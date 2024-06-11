@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shriram</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/images/favicon.ico" sizes="16x16">
+
+    <style type="text/css">       
+        .section-header h2 {
+            font-family: 'Montserrat' !important;
+            font-weight: 700 !important;
+            font-size: 40px !important;
+            line-height: 55px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .btn-container button {
+            form-controler: none;
+            background-color: #233349;
+            color: white;
+            padding: 10px 20px;
+        }
+        .proj-header {
+            line-height: 25px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .border-hov:hover{
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        .nav-link{
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-none d-md-block" href="#">
+                <img src="assets/images/logo.jpg" class="w-75" />
+            </a>
+            <a class="navbar-brand d-block d-md-none" href="#">
+                <img src="assets/images/logo.jpg" class="w-50" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home">
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="assets/images/banner1.jpg" style="width:100%">
+                        <source media="(max-width:768px)" class="w-100" srcset="assets/images/m-banner.jpg" style="width:100%" height="486" width="320">
+                        <img src="assets/images/banner1.jpg" class="img-fluid" alt="" title="" style="width:100%">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="assets/images/banner2.jpg" style="width:100%">
+                        <source media="(max-width:768px)" class="w-100" srcset="assets/images/m-banner2.jpg" style="width:100%" height="486" width="320">
+                        <img src="assets/images/banner2.jpg" class="img-fluid" alt="" title="" style="width:100%">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="assets/images/banner3.jpg" style="width:100%">
+                        <source media="(max-width:768px)" class="w-100" srcset="assets/images/m-banner3.jpg" style="width:100%" height="486" width="320">
+                        <img src="assets/images/banner3.jpg" class="img-fluid" alt="" title="" style="width:100%">
+                    </picture>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="py-5" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="section-header text-center">
+
+                    <h2>ABOUT US</h2>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">                   
+
+                    <p style="text-align: justify;">We are one of the leading residential real estate development companies in South India primarily focused on the mid-market and affordable housing categories. We are also present in plotted development, mid-market premium, luxury housing as well as commercial & office space categories in our core markets. We commenced operations in Bengaluru in the year 2000 and have since expanded our presence to other cities in South India.</p>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                    <img src="assets/images/about-us.jpg" class="img-fluid">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5" id="project">
+        <div class="container">
+            <div class="section-header">
+
+                <h2>Projects</h2>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12 mb-3 border border-hov">
+                    <div class="row align-items-center py-4">
+                        <div class="col-md-6 col-12">
+                            <img src="assets/images/ultimate.jpg" class="img-fluid mb-md-0 mb-3">
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h3 class=" text-uppercase proj-header pt-3">SHRIRAM CODENAME ULTIMATE</h3>
+                            <p class="loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Sarjapur, Bangalore East
+                            </p>
+                            <p class="cont-p fw-bold">Residential Apartments</p>
+                            <div class="row ong-cont">
+                                <div class="col-4 col-form-controler1">
+                                    <p class="fw-bold">Unit Size</p>
+                                    <p>975 Sq.Ft. to 1295 Sq.Ft.</p>
+                                </div>
+                                <div class="col-4 col-form-controler">
+                                    <p class="fw-bold">Units</p>
+                                    <p>2 & 3 BHK</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="fw-bold">Status</p>
+                                    <p>New Launch</p>
+                                </div>
+                            </div>
+                            <div class="btn-container mt-2">                               
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">
+                                    Book A Site Visit
+                                </button>
+                            </div>
+                        </div>
+                    </div>                    
+
+                </div>
+
+
+                <div class="col-md-12 col-12 mb-3 border border-hov">
+                    <div class="row align-items-center py-4"> 
+                        <div class="col-md-6 col-12 d-block d-md-none">
+                            <img src="assets/images/chirpinggrove.jpg" class="img-fluid mb-md-0 mb-3">
+                        </div>                       
+                        <div class="col-md-6 col-12 mb-md-0 mb-3">
+                            <h3 class=" text-uppercase proj-header pt-3">SHRIRAM CHIRPING GROVE</h3>
+                            <p class="loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                3rd main, Byraveshwara Nagar, Bangalore.
+                            </p>
+                            <p class="cont-p fw-bold">Villa</p>
+                            <div class="row ong-cont">
+                                <div class="col-4 col-form-controler1">
+                                    <p class="fw-bold">Unit Size</p>
+                                    <p>1152 Sq.Ft. to 1197 Sq.Ft.</p>
+                                </div>
+                                <div class="col-4 col-form-controler">
+                                    <p class="fw-bold">Unit</p>
+                                    <p>3 & 4 BHK</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="fw-bold">Status</p>
+                                    <p>Under Construction</p>
+                                </div>
+                            </div>
+                            <div class="btn-container mt-2">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">
+                                    Book A Site Visit
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 d-none d-md-block">
+                            <img src="assets/images/chirpinggrove.jpg" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-12 col-12 mb-3 border border-hov">
+                    <div class="row align-items-center py-4">
+                        <div class="col-md-6 col-12">
+                            <img src="assets/images/poem.jpg" class="img-fluid mb-md-0 mb-3">
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h3 class=" text-uppercase proj-header pt-3">SHRIRAM THE POEM</h3>
+                            <p class="loc">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Kumbalgodu Village, Kengeri
+                                Hobli, Bangalore South Taluk
+                            </p>
+                            <p class="cont-p fw-bold">Residential Apartments</p>
+                            <div class="row ong-cont">
+                                <div class="col-4 col-form-controler1">
+                                    <p class="fw-bold">Unit Size</p>
+                                    <p>950 Sq.Ft. to 1900 Sq.Ft.</p>
+                                </div>
+                                <div class="col-4 col-form-controler">
+                                    <p class="fw-bold">Units</p>
+                                    <p>2, 2.5 & 3 BHK</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="fw-bold">Status</p>
+                                    <p>New Launch</p>
+                                </div>
+                            </div>
+                            <div class="btn-container mt-2">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">
+                                    Book A Site Visit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12 col-12 mb-3 border border-hov d-none">
+                    <div class="px-4">
+                        <h3 class=" text-uppercase proj-header pt-3">SHRIRAM SOLITAIRE</h3>
+                        <p class="loc">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Yelahanka New Town, Bangalore
+                        </p>
+                        <p class="cont-p fw-bold">INDUSTRIAL PLOTS</p>
+                        <div class="row ong-cont">
+                            <div class="col-4 col-form-controler1">
+                                <p class="fw-bold">Unit Size</p>
+                                <p>1000 Sq.Ft. to 1450 Sq.Ft.</p>
+                            </div>
+                            <div class="col-4 col-form-controler">
+                                <p class="fw-bold">Units</p>
+                                <p>2, 3 BHK</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="fw-bold">Status</p>
+                                <p>Ongoing</p>
+                            </div>
+                        </div>
+                        <div class="btn-container mt-2">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">
+                                Book A Site Visit
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12 col-12 mb-3 border border-hov  d-none">
+                    <div class="px-4">
+                        <h3 class=" text-uppercase proj-header pt-3">SHRIRAM ESQUIRE</h3>
+                        <p class="loc">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Koramangala 1st Block, Bangalore
+                        </p>
+                        <p class="cont-p fw-bold">Residential Apartment</p>
+                        <div class="row ong-cont">
+                            <div class="col-4 col-form-controler1">
+                                <p class="fw-bold">Unit Size</p>
+                                <p>1940 Sq.Ft. to 2370 Sq.Ft.</p>
+                            </div>
+                            <div class="col-4 col-form-controler">
+                                <p class="fw-bold">Units</p>
+                                <p>3, 4 BHK</p>
+                            </div>
+                            <div class="col-4">
+                                <p class="fw-bold">Status</p>
+                                <p>Ongoing</p>
+                            </div>
+                        </div>
+                        <div class="btn-container mt-2">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">
+                                Book A Site Visit
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Footer with Form -->
+    <footer class="footer bg-light pt-5" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>CONTACT US</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h4 class="text-center mb-4">ABOUT BUILDER</h4>
+                    <p style="text-align: justify;">Shriram Properties, real estate developers and builders, is committed to providing quality and affordable housing and commercial properties in Bangalore, Chennai, Vizag and Kolkata. For over a decade now, Shriram Properties has laid emphasis on addressing the lifestyle needs of the customer, building quality and affordable apartments that provide optimal value for money. With an excellent track record of completing major projects in Tier 1 & Tier 2 cities, Shriram Properties envisages establishing a pan-India presence with a portfolio of projects, including residential apartments, modern integrated townships, commercial, retail, hospitality and SEZs.</p>
+                </div>
+
+                <div class="col-12 col-md-5 mb-4">
+                    <h4 class="text-center mb-4">ENQUIRE NOW</h4>                    
+                    <form id="footer-form">
+                        <div id="note2"></div>
+                        <div class="row">
+                            <div class="col-md-12 col-12 col-lg-6">
+                                <input type="text" placeholder="Name*" name="name" require="" class="mb-4 form-control w-100" fdprocessedid="ixtwk">
+                            </div>
+                            <div class="col-md-12 col-12 col-lg-6">
+                                <input type="tel" placeholder="Phone Number*" name="phone" require="" class="mb-4 form-control w-100" fdprocessedid="k0rzjx">
+                            </div>
+                            <div class="col-md-12 col-12 col-lg-12">
+                                <input type="email" placeholder="Email*" name="email" require="" class="mb-4 form-control w-100" fdprocessedid="63rktf">
+                            </div>
+                            <div class="col-md-12 col-12 col-lg-12">
+                                <textarea placeholder="Message" name="message" require="" class="form-control w-100 fom" style="padding: 0 5px;"></textarea>
+                            </div>
+                            <div class="col-md-12 col-12 col-md-12 mt-3 btn-container text-center">
+                                <button id="footer-button" class="sbtn">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer_wrapper form-controler-top bg-dark py-3">
+            <div class="container">
+                <div class="container">
+                <p class="py-2 lh-sm mb-0 text-light" style="font-size:12px;">Disclaimer: The information provided on this website is intended exclusively for informational purposes and should not be construed as an offer of services. The pricing information presented on this website is subject to alteration without advance notification, and the assurance of property availability cannot be guaranteed. The images showcased on this website are for representational purposes only and may not accurately reflect the actual properties. We may share your data with Real Estate Regulatory Authority (RERA) registered Developers for further processing as necessary. Additionally, we may send updates and information to the mobile number or email address registered with us. All rights reserved. </p>
+                </div>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    <!-- Bootstrap Modal with Form -->
+    <div class="modal fade" id="enquire_form_popup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="popupform">
+                <div class="modal-header cmcob text">
+                    <h4 class="text-center">ENQUIRE NOW</h4>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class=" pb-4" style="width:100%;">
+                        <form id="popup-contact-form">
+
+                            <div id="note3"></div>
+
+                            <div class="text-center px-2">
+                                <input type="text" class="form-control mt-3 py-2" name="name" placeholder="Name">
+                                <input type="text" class="form-control mt-3 py-2" name="phone" placeholder="Mobile">
+                                <input type="email" class="form-control mt-3 py-2" name="email" placeholder="Email">
+                                <textarea name="message" cols="30" rows="2" placeholder="Message" class="form-control mt-3 py-2"></textarea>
+                                <div class="col-md-12 col-12 col-md-12 mt-3 btn-container text-center">
+                                    <button id="popup-contact-form-button" class="sbtn">SUBMIT</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function submitForm(formId, buttonId, noteId, redirectUrl) {
+            $(formId).submit(function (event) {
+                event.preventDefault();
+                $(buttonId).text("Please Wait");
+                $(buttonId).attr('disabled', 'disabled');
+
+                // Create an object to hold form data
+                var formData = {
+                    name: $(formId + ' [name="name"]').val(),
+                    email: $(formId + ' [name="email"]').val(),
+                    phone: $(formId + ' [name="phone"]').val(),
+                    message: $(formId + ' [name="message"]').val(),
+                    subject: "ShriRam", // Change this to your desired subject value
+                    additionalRecipients:['ravi.k@imsolutions.mobi']
+
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://us-central1-email-js-1a09b.cloudfunctions.net/emailjs/submit-form",
+                    //url: "contact-process.php",
+                    data: formData,
+                    success: function (msg) {
+                        $(buttonId).removeAttr('disabled');
+                        $(buttonId).text("Submit");
+                        if (msg === 'OK') {
+                            result = '<p style="color:green; font-weight: 600;font-size: 18px;width:100%">Email Sent Successfully!</p>';
+                            $(noteId).delay(20000).fadeOut();
+                            $(formId)[0].reset();
+                        } else {
+                            result = msg;
+                        }
+                        $(noteId).html(result);
+                    },
+                    error: function () {
+                        $(buttonId).removeAttr('disabled');
+                        $(buttonId).text("Submit");
+                        $(noteId).html('<p style="color:red; font-weight: 600;font-size: 18px;width:100%">Error sending email!</p>');
+                    }
+                });
+                return false;
+            });
+        }
+
+        $(document).ready(function () {
+            submitForm("#popup-contact-form", "#popup-contact-form-button", "#note3", "thankyou.html");
+            submitForm("#footer-form", "#footer-button", "#note2", "thankyou.html");
+        });
+    </script>
+</body>
+</html>
